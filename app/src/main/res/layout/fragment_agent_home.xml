@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:paddingBottom="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/topCardAgent"
+            app:cardCornerRadius="16sp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" >
+
+           <LinearLayout
+               android:padding="8dp"
+               android:orientation="vertical"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <TextView
+                   android:textStyle="bold"
+                   android:paddingTop="8dp"
+                   android:text="Greetings,"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+
+               <TextView
+                   android:textAlignment="center"
+                   android:text="Please read our terms and conditions before \n proceeding into any service deals. \n Thank you. "
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"/>
+
+
+           </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:paddingTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/topCardAgent">
+
+
+            <TextView
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:paddingLeft="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Terms and conditions" />
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:paddingTop="24dp"
+                android:paddingBottom="16dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3">
+                
+                
+               <LinearLayout
+                   android:gravity="center"
+                   android:orientation="vertical"
+                   android:layout_weight="1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content">
+
+                   <ImageButton
+                       android:layout_width="50dp"
+                       android:layout_height="50dp"/>
+
+                   <TextView
+                       android:textAlignment="center"
+                       android:text="Dummy"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"/>
+
+
+               </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+
+                    <TextView
+                        android:textAlignment="center"
+                        android:text="Dummy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+
+                    <TextView
+                        android:textAlignment="center"
+                        android:text="Dummy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_margin="10dp"
+                app:cardCornerRadius="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:textSize="22sp"
+                    android:padding="8dp"
+                    android:text="Remove or modify any copyright, trademark or other proprietary rights notice on the application or on any materials printed or copied off of the application\nUse the application to violate any third-party right, including any breach of confidence, copyright, trademark, patent, trade secret, moral right, privacy right, right of publicity, or any other intellectual property or proprietary right.\nUse the application to post any Content that contains in part or whole, any virus, malware code, or is false, defamatory, unlawful, tortious, defamatory, inaccurate, abusive, vulgar, hateful, harassing, obscene, impersonal, profane, ethnically and/or sexually objectionable or threatening or to post any advertisement, harmful to minors, chain letters, solicitation or other commercial message, or to post material that is illegally invasive of another person’s privacy.\nUse the application in a manner that may create a conflict of interest, such as trading reviews with other business owners or writing or soliciting shill reviews;"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

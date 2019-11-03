@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="48dp">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circleImageView"
+                android:layout_width="100dp"
+                android:layout_height="100sp"
+                android:layout_marginTop="45dp"
+                android:src="@drawable/girl"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/clientmeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Jesicca Levis"
+                android:textSize="17sp"
+                app:layout_constraintEnd_toEndOf="@+id/circleImageView"
+                app:layout_constraintStart_toStartOf="@+id/circleImageView"
+                app:layout_constraintTop_toBottomOf="@+id/circleImageView" />
+
+            <TextView
+                android:id="@+id/clientmePhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="9845654565"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/clientmeName"
+                app:layout_constraintStart_toStartOf="@+id/clientmeName"
+                app:layout_constraintTop_toBottomOf="@+id/clientmeName" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="40dp"
+                android:text="Client Details"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clientmePhone" />
+
+            <TextView
+                android:id="@+id/clientmeEmails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="32dp"
+                android:text="Email"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+            <TextView
+                android:id="@+id/clientmeEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginLeft="50dp"
+                android:text="Joe Doe"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/clientmeEmails"
+                app:layout_constraintStart_toEndOf="@+id/clientmeEmails"
+                app:layout_constraintTop_toTopOf="@+id/clientmeEmails" />
+
+            <TextView
+                android:id="@+id/clientmeLocations"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Location"
+                app:layout_constraintStart_toStartOf="@+id/clientmeEmails"
+                app:layout_constraintTop_toBottomOf="@+id/clientmeEmails" />
+
+            <TextView
+                android:id="@+id/clientmeLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9845654565"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/clientmeLocations"
+                app:layout_constraintStart_toStartOf="@+id/clientmeEmail"
+                app:layout_constraintTop_toTopOf="@+id/clientmeLocations" />
+
+<!--            <TextView-->
+<!--                android:id="@+id/textView9"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="32dp"-->
+<!--                android:text="Service Type"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/textView7"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/textView7" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textView10"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Barber (Male)"-->
+<!--                android:textSize="15sp"-->
+<!--                android:textStyle="bold"-->
+<!--                app:layout_constraintBottom_toBottomOf="@+id/textView9"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/textView8"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/textView9" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textView11"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="32dp"-->
+<!--                android:text="Service Hours"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/textView9"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/textView9" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textView12"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="10AM - 6PM"-->
+<!--                android:textSize="15sp"-->
+<!--                android:textStyle="bold"-->
+<!--                app:layout_constraintBottom_toBottomOf="@+id/textView11"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/textView10"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/textView11" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textView13"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="16dp"-->
+<!--                android:layout_marginLeft="16dp"-->
+<!--                android:layout_marginTop="32dp"-->
+<!--                android:text="Home Service"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/textView11" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textView14"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Yes"-->
+<!--                android:textSize="15sp"-->
+<!--                android:textStyle="bold"-->
+<!--                app:layout_constraintBottom_toBottomOf="@+id/textView13"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/textView12"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/textView13" />-->
+
+<!--            <TextView-->
+
+<!--                android:id="@+id/textView15"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="16dp"-->
+<!--                android:layout_marginLeft="16dp"-->
+<!--                android:layout_marginTop="32dp"-->
+<!--                android:text="Location"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/textView13" />-->
+
+<!--            <TextView-->
+
+<!--                android:id="@+id/textView16"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="New Baneshwor"-->
+<!--                android:textSize="15sp"-->
+<!--                android:textStyle="bold"-->
+<!--                app:layout_constraintBottom_toBottomOf="@+id/textView15"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/textView14"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/textView15" />-->
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

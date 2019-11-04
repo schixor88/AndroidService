@@ -126,7 +126,7 @@ public class LoginActivity extends AppCompatActivity {
     };
 
     private void setActionAsAgentLogin() {
-        Toast.makeText(this, "agent login actions", Toast.LENGTH_SHORT).show();
+       // Toast.makeText(this, "agent login actions", Toast.LENGTH_SHORT).show();
         phone = loginPhone.getText().toString();
         password =loginPassword.getText().toString();
 
@@ -150,7 +150,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void setActionAsClientLogin() {
-        Toast.makeText(this, "client login actions", Toast.LENGTH_SHORT).show();
+       // Toast.makeText(this, "client login actions", Toast.LENGTH_SHORT).show();
         phone = loginPhone.getText().toString();
         password =loginPassword.getText().toString();
 

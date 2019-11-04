@@ -270,7 +270,6 @@ public class RegisterActivity extends AppCompatActivity {
         }
 
         if (!registerPassword.getText().toString().equals(registerConfirmPassword.getText().toString())){
-
             Toast.makeText(this, "Password do not match!", Toast.LENGTH_SHORT).show();
             return;
         }

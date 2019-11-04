@@ -35,8 +35,8 @@ public class LoginActivity extends AppCompatActivity {
     private String MODE = null;
     private String TYPE = null;
 
-    TextInputLayout loginEmailLayout;
-    TextInputEditText loginEmail;
+    TextInputLayout loginPhoneLayout;
+    TextInputEditText loginPhone;
     TextInputLayout loginPasswordLayout;
     TextInputEditText loginPassword;
 
@@ -83,8 +83,8 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void initViewComponents() {
-        loginEmailLayout = findViewById(R.id.login_email_layout);
-        loginEmail = findViewById(R.id.login_email);
+        loginPhoneLayout = findViewById(R.id.login_email_layout);
+        loginPhone = findViewById(R.id.login_email);
         loginPasswordLayout = findViewById(R.id.login_password_layout);
         loginPassword = findViewById(R.id.login_password);
 
@@ -127,13 +127,19 @@ public class LoginActivity extends AppCompatActivity {
 
     private void setActionAsAgentLogin() {
         Toast.makeText(this, "agent login actions", Toast.LENGTH_SHORT).show();
-        phone = loginEmail.getText().toString();
+        phone = loginPhone.getText().toString();
         password =loginPassword.getText().toString();
 
         if (phone.isEmpty()||password.isEmpty()){
             Toast.makeText(LoginActivity.this, "Please fill your credentials", Toast.LENGTH_SHORT).show();
             return;
         }
+
+        if (!TextUtils.isValidPhone(loginPhone.getText().toString())){
+            Toast.makeText(this, "Please enter valid phone number", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
 
         // Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
         // startActivity(intent);
@@ -145,13 +151,19 @@ public class LoginActivity extends AppCompatActivity {
 
     private void setActionAsClientLogin() {
         Toast.makeText(this, "client login actions", Toast.LENGTH_SHORT).show();
-        phone = loginEmail.getText().toString();
+        phone = loginPhone.getText().toString();
         password =loginPassword.getText().toString();
 
         if (phone.isEmpty()||password.isEmpty()){
             Toast.makeText(LoginActivity.this, "Please fill your credentials", Toast.LENGTH_SHORT).show();
             return;
         }
+
+        if (!TextUtils.isValidPhone(phone)){
+            Toast.makeText(this, "Please enter valid phone number", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
 
         firebaseLoginClientWithEmail(phone,password);
     }

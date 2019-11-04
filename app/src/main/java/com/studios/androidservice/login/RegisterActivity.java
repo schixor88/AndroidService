@@ -25,6 +25,7 @@ import com.studios.androidservice.core.UserCore;
 import com.studios.androidservice.models.Agent;
 import com.studios.androidservice.models.Client;
 import com.studios.androidservice.starter.StarterActivity;
+import com.studios.androidservice.utils.TextUtils;
 
 public class RegisterActivity extends AppCompatActivity {
 
@@ -176,6 +177,16 @@ public class RegisterActivity extends AppCompatActivity {
             return;
         }
 
+        if (!TextUtils.isValidPhone(registerPhone.getText().toString())){
+            Toast.makeText(this, "Please enter valid phone number", Toast.LENGTH_SHORT).show();
+        }
+
+        if (!TextUtils.isValidEmailId(registerEmail.getText().toString())){
+            Toast.makeText(this, "Please enter valid email", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+
         if (!registerPassword.getText().toString().equals(registerConfirmPassword.getText().toString())){
 
             Toast.makeText(this, "Password do not match!", Toast.LENGTH_SHORT).show();
@@ -245,6 +256,16 @@ public class RegisterActivity extends AppCompatActivity {
         ){
 
             Toast.makeText(this, "Please fill all data", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        if (!TextUtils.isValidPhone(registerPhone.getText().toString())){
+            Toast.makeText(this, "Please enter valid phone number", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        if (!TextUtils.isValidEmailId(registerEmail.getText().toString())){
+            Toast.makeText(this, "Please enter valid email", Toast.LENGTH_SHORT).show();
             return;
         }
 

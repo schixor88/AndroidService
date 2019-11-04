@@ -8,6 +8,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".client.TermsCondition"></activity>
         <activity android:name=".starter.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,9 +22,7 @@
         <activity android:name=".agent.LandingAgentActivity" />
         <activity android:name=".login.RegisterActivity" />
         <activity android:name=".login.LoginActivity" />
-        <activity android:name=".starter.StarterActivity">
-
-        </activity>
+        <activity android:name=".starter.StarterActivity"></activity>
     </application>
 
 </manifest>

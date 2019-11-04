@@ -9,10 +9,12 @@ import android.widget.ImageButton;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
 import com.studios.androidservice.R;
 import com.studios.androidservice.client.CategoryActivity;
+import com.studios.androidservice.client.TermsCondition;
 
 public class HomeFragment extends Fragment {
 
@@ -64,6 +66,19 @@ public class HomeFragment extends Fragment {
         ImageButton tailor = view.findViewById(R.id.category_tailor);
         ImageButton rentals = view.findViewById(R.id.category_rental);
         ImageButton misc = view.findViewById(R.id.category_misc);
+
+        //
+        CardView topagentcard = view.findViewById(R.id.topCardAgents);
+        topagentcard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(getActivity(), TermsCondition.class);
+                startActivity(intent);
+
+
+            }
+        });
 
         plumbing.setOnClickListener(handleCategory);
         food.setOnClickListener(handleCategory);
